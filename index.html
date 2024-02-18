@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>CV</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="left">
+            <div class="profile">
+                <div class="img">
+                    <img src="IMG_2023-11-03-16-11-01-513~4.jpg" alt="gambar">
+                </div>
+                <h2>Ari Gamaliel Manohan Silitonga <br><span>Web Developer</span></h2>
+            </div>
+            <div class="contact">
+                <h3 class="title">Contact</h3>
+                <ul>
+                    <li>
+                        <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i>
+                        </span>
+                        <span class="text">+62 812 6055 4805</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-envelope" aria-hidden="true"></i>
+                        </span>
+                        <span class="text">silitongamanohan2@gmail.com</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-instagram" aria-hidden="true"></i>
+                        </span>
+                        <span class="text">@manohan123</span>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i>
+                        </span>
+                        <span class="text">Rantauprapat, Sumatera Utara, Indonesia</span>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div class="contact education1">
+                <h3 class="title">Education</h3>
+                <ul>
+                    <li>
+                        <h5>2011-2017</h5>
+                        <h4>SD</h4>
+                        <h4>SDS Methodist-2 Rantauprapat</h4>
+                    </li>
+                    <li>
+                        <h5>2017-2020</h5>
+                        <h4>SMP</h4>
+                        <h4>SMP Negeri 2 Rantau Utara</h4>
+                    </li>
+                    <li>
+                        <h5>2020-2023</h5>
+                        <h4>SMA</h4>
+                        <h4>SMA Negeri 3 Rantau Utara</h4>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="right">
+            <div class="about">
+                <h2 class="title2">Profile</h2>
+                <p>Hi, I am Ari Gamaliel Manohan Silitonga. <br> I am currently studying at USU majoring in IT for a bachelor's degree. I am a beginner in the IT field and now I am learning web programming with HTML, CSS, and Javascript</p>
+            </div>
+            <div class="about">
+                <h2 class="title2">Experience</h2>
+                <div class="box">
+                    <div class="year">
+                        <h5>2016</h5>
+                        <h5>1st place OSN SD</h5>
+                    </div>
+                    
+                </div>
+                <div class="box">
+                    <div class="year">
+                        <h5>2017</h5>
+                        <h5>1st place Try Out UN PT. Penerbit Erlangga</h5>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <div class="about">
+            <h2 class="title2">Target in the next few years</h2>
+            </div>
+            <div id="additionalDetails" class="hidden">
+            <div class="education">
+                <div class="line">
+                  <div></div>
+                </div>
+            <div class="education-info">
+                  <h4 class="education-title">Get a Medal at PIMNAS </h4>
+                  <h4 class="education-years">2024 - 2027</h4>
+            </div>
+            </div>
+            <div class="education">
+                <div class="line">
+                  <div></div>
+            </div>
+            <div class="education-info">
+                  <h4 class="education-title">Graduate in 4 years</h4>
+                  <h4 class="education-years">2027</h4>
+            </div>
+            </div>
+            <div class="education">
+                <div class="line">
+                  <div></div>
+                </div>
+                <div class="education-info">
+                  <h4 class="education-title">Mastering database and network systems</h4>
+                  <h4 class="education-years">-</h4>
+            </div>
+            </div>
+            </div>
+            <i id="toggleButton" class="fa fa-arrow-down" aria-hidden="true"></i>
+                <br><br>
+            <div class="about interest">
+                <h2 class="title2">Interest</h2>
+                <ul>
+                    <li><i class="fa fa-gamepad" aria-hidden="true"></i>
+                        Gaming</li>
+                    <li><i class="fa fa-microphone" aria-hidden="true"></i>
+                        Singing</li>
+                    <li><i class="fa fa-music" aria-hidden="true"></i>
+                        Listening Music</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript untuk menampilkan/menyembunyikan detail tambahan
+const toggleButton = document.getElementById('toggleButton');
+const additionalDetails = document.getElementById('additionalDetails');
+
+toggleButton.addEventListener('click', function() {
+  if (additionalDetails.classList.contains('hidden')) {
+    additionalDetails.classList.remove('hidden');
+    toggleButton.classList.remove('fa-arrow-down');
+    toggleButton.classList.add('fa-arrow-up');
+  } else {
+    additionalDetails.classList.add('hidden');
+    toggleButton.classList.remove('fa-arrow-up');
+    toggleButton.classList.add('fa-arrow-down');
+  }
+});
+
+      </script>
+</body>
+</html>
